@@ -14,7 +14,7 @@ def get_ai_recommendation(user_job, state, user_query):
     live_gov_context = search.run(search_query)
 
     # 2. THE TRANSLATOR: Gemini translates it for the specific user
-llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
+    llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
     
     system_prompt = f"""
     You are an Official Government Policy Assistant. 
