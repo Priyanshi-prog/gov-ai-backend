@@ -10,7 +10,7 @@ def get_ai_recommendation(user_job, state, user_query, age, gender, income):
     live_gov_context = search.run(search_query)
 
     # 2. PERSONALIZED FILTER (Using the stable 1.5 model)
-    llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash")
+    llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash-latest")
     
     system_prompt = f"""
     You are an Official Government Policy Eligibility Expert.
